@@ -1,0 +1,92 @@
+html {
+	height  : 100%;
+	overflow: hidden;
+}
+
+body {
+	margin         : 0;
+	padding        : 0;
+	perspective    : 1px;
+	perspective: preserve-3d;
+	overflow-y     : scroll;
+	overflow-x     : hidden;
+}
+
+.container{
+	width: 1440px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+.layer img {
+	position: absolute;
+	top     : 0;
+	left    : 0;
+	height  : 100%;
+}
+
+.main-section {
+	margin: 0 auto;
+	box-sizing     : border-box;
+	min-height     : 100vh;
+	padding-top    : 20%;
+	transform-style: inherit;
+	overflow       : hidden;
+	position       : relative;
+}
+
+.main-section__layer1 {
+	display         : block;
+	position        : absolute;
+	left            : 0;
+	right           : 0;
+	bottom          : 0;
+	top             : 0;
+	z-index         : -1;
+	transform-origin: center;
+	height          : 100vh;
+	transition      : 0.1s;
+	/* Параллакс */
+	transform       : translateZ(-1px) scale(2);
+
+}
+
+.main-section__layer2 {
+
+	display         : block;
+	position        : absolute;
+	left            : 0;
+	right           : 0;
+	bottom          : 0;
+	top             : 0;
+	z-index         : -1;
+	transform-origin: center;
+	height          : 100vh;
+	transition      : 0.1s;
+	/* Параллакс */
+	transform       : translateZ(-1px) scale(2);
+}
+
+.main-section__layer3 {
+	display         : block;
+	position        : absolute;
+	left            : 0;
+	right           : 0;
+	bottom          : 0;
+	top             : 0;
+	z-index         : -1;
+	transform-origin: center;
+	height          : 100vh;
+	transition      : 0.1s;
+	/* Параллакс */
+	transform       : translateZ(-1px) scale(2);
+}
+
+
+// .cosmonaut{
+// 	height: 100vh;
+// }
+// .cosmonaut img{
+// 	height: 100vh;
+// }
