@@ -242,6 +242,10 @@ body {
   transition: all 0.5s;
 }
 
+body {
+  background-color: black;
+}
+
 .main-section {
   position: relative;
   height: 100vh;
@@ -296,10 +300,12 @@ body {
 }
 
 .content__buttons {
-  width: 554px;
+  max-width: 554px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -324,6 +330,10 @@ body {
   transition: all 0.5s;
 }
 
+.content__button:nth-child(1) {
+  margin: 0px 24px 0px 0px;
+}
+
 @media (max-width: 992px) {
   .navigation__access:hover,
   .content__button:hover {
@@ -338,6 +348,10 @@ body {
     -webkit-transition: none;
     -o-transition: none;
     transition: none;
+  }
+
+  .webp .buttonBG {
+    display: none;
   }
 
   .navigation {

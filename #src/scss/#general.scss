@@ -119,8 +119,11 @@ body{
 	.navigation__access:hover, .content__button:hover .buttonBG{
 		background: none;
 		transition: none;
+		
 	}
-
+	.webp .buttonBG {
+		display: none;
+	}
 	.navigation{
 		position: fixed;
 		top: 0px;
@@ -185,7 +188,9 @@ body{
 }
 
 //main section=====================================
-
+body{
+	background-color: black;
+}
 .main-section{
 	position: relative;
 	height: 100vh;
@@ -209,7 +214,7 @@ body{
 		justify-content: center;
 		max-width: 995px;
 		margin: 0 auto;
-		}
+	}
 }
 
 .content{
@@ -224,12 +229,14 @@ body{
 		text-align-last: center;
 		}
 	&__buttons{
-		width: 554px;
+		max-width: 554px;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		margin-top: 62px;
 	}
 	&__button{
+		
 		font-size: 20px;
 		width: 264px;
 		height: 74px;
@@ -240,6 +247,9 @@ body{
 		&:hover .buttonBG{
 			opacity: 1;
 			transition: all 0.5s;
+		}
+		&:nth-child(1){
+			margin: 0px 24px 0px 0px;
 		}
 	}
 }
