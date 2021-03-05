@@ -1,3 +1,6 @@
+//полноэкранный скролл
+@@include('fullpage.js');
+
 //функция для подключения webp
 function testWebP(callback) {
 
@@ -37,3 +40,13 @@ window.addEventListener('DOMContentLoaded', () => {
 		 })
 	})
 })
+
+
+
+
+
+new fullpage('#fullpage', {
+	//options here
+	autoScrolling:true,
+	scrollHorizontally: true
+});
