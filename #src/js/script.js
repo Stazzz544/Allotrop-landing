@@ -21,6 +21,8 @@ testWebP(function (support) {
 });
 
 //==================================
+
+
 window.addEventListener('DOMContentLoaded', () => {
 	const menu = document.querySelector('.navigation__flex'),
 	menuItem = document.querySelectorAll('.menu_item'),
@@ -39,8 +41,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			  menu.classList.toggle('navigation__flex_active');
 		 })
 	})
-})
-
+});
 
 
 
@@ -50,3 +51,4 @@ new fullpage('#fullpage', {
 	autoScrolling:true,
 	scrollHorizontally: true
 });
+
