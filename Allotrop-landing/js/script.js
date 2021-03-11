@@ -4287,6 +4287,12 @@ window.addEventListener('DOMContentLoaded', () => {
 new fullpage('#fullpage', {
 	//options here
 	autoScrolling:true,
-	scrollHorizontally: true
+	scrollHorizontally: true,
+	anchors:['firstPage', 'secondPage', 'thirdPage'],
+	navigation: true,
+	navigationTooltips: true,
+	navigationTooltips: ['Главная', 'О планете', 'Миссия'],
+	// showActiveTooltip: true,
+	responsiveWidth: 1000 //убераем прокрутку на определённом типе экрана
 });
 
