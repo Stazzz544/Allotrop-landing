@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" href="../package/swiper-bundle.min.css"> -->
 	<link rel="stylesheet" href="css/style.min.css">
 	<title>Allotrop</title>
 </head>
@@ -329,55 +330,93 @@
 		</section>
 
 		<section class="gallery section-bg section" data-anchor="slide5">
+			<div class="section-bg__background">
+				<img class="background-image__img" src="img/section-5/bg/bg.jpg" alt="">
+			</div>
+			<h2 class='gallery__title title'>раскрой потенциал загадочной планеты</h2>
+			<div class="container swiper-params">
+				<div class="swiper-container gallery-top">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" style="background-image:url(img/section-5/gallery/1.jpg)"></div>
+						<div class="swiper-slide swiper-slide2" style="background-image:url(img/section-5/gallery/2.jpg)">
+						</div>
+						<div class="swiper-slide swiper-slide3" style="background-image:url(img/section-5/gallery/3.jpg)">
+						</div>
+						<div class="swiper-slide" style="background-image:url(img/section-5/gallery/4.jpg)"></div>
+					</div>
+					<!-- Add Arrows -->
+					<div class="swiper-button-next swiper-button-white"></div>
+					<div class="swiper-button-prev swiper-button-white"></div>
+				</div>
+				<div class="swiper-container gallery-thumbs">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" style="background-image:url(img/section-5/gallery/1.jpg)"></div>
+						<div class="swiper-slide" style="background-image:url(img/section-5/gallery/2.jpg)"></div>
+						<div class="swiper-slide" style="background-image:url(img/section-5/gallery/3.jpg)"></div>
+						<div class="swiper-slide" style="background-image:url(img/section-5/gallery/4.jpg)"></div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-		<div class="container">
-		<h2 class="gallery__title title">раскрой потенциал загадочной планеты</h2>
-		<div class="img-container">
-		  <div class="mySlides">
-			 <div class="numbertext">1 / 6</div>
-			 <img src="img/section-5/gallery/1.jpg" style="width:100%">
-		  </div>
-		
-		  <div class="mySlides">
-			 <div class="numbertext">2 / 6</div>
-			 <img src="img/section-5/gallery/2.jpg" style="width:100%">
-		  </div>
-		
-		  <div class="mySlides">
-			 <div class="numbertext">3 / 6</div>
-			 <img src="img/section-5/gallery/3.jpg" style="width:100%">
-		  </div>
-			 
-		  <div class="mySlides">
-			 <div class="numbertext">4 / 6</div>
-			 <img src="img/section-5/gallery/4.jpg" style="width:100%">
-		  </div>
-			 
-		  <a class="prev" onclick="plusSlides(-1)">❮</a>
-		  <a class="next" onclick="plusSlides(1)">❯</a>
-		
-		  <div class="caption-container">
-			 <p id="caption"></p>
-		  </div>
-		
-		  <div class="row">
-			 <div class="column">
-				<img class="demo cursor" src="img/section-5/gallery/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-			 </div>
-			 <div class="column">
-				<img class="demo cursor" src="img/section-5/gallery/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-			 </div>
-			 <div class="column">
-				<img class="demo cursor" src="img/section-5/gallery/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-			 </div>
-			 <div class="column">
-				<img class="demo cursor" src="img/section-5/gallery/4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-			 </div>
-		  </div>
-		</div>
+		<section class="footer section-bg section" data-anchor="slide6">
+			
+
+			<div class="footer__main-flex">
+					<div class="footer__flex-container">
+						<div class="footer__logo-and-button">
+							<div class="footer__logo"></div>
+							<div class="footer__button">
+								<a class=" footer__button navigation__link navigation__access button" href="#">ранний доступ
+									<div class="buttonBG"></div>
+								</a>
+							</div>
+						</div>
+						<div class="footer__text">
+							<h2 class="footer__title title">будь первым!</h2>
+							<h3 class="footer__subtitle subtitle">ПОЛУЧИ РАННИЙ ДОСТУП К ИГРЕ<br> «АЛЛОТРОП: ВОЗРОЖДЕНИЕ» </h3>
+							<h3 class="footer__subtitle subtitle">Жанр: <span>sci-fi</span></h3>
+							<h3 class="footer__subtitle subtitle">реализ: <span>21 июля 2021</span></h3>
+							<h3 class="footer__subtitle subtitle">возрастной ценз: <span>12+</span></h3>
+							<h3 class="footer__subtitle subtitle">издатель: <span>АНО «еНано»</span></h3>
+							<h3 class="footer__subtitle subtitle">платформа: <span>PC - Steam</span></h3>
+						</div>
+					</div>
+					<footer class="footer__footer">
+							<ul class="footer__about">
+								<li class="footer__about-text">Узнать больше:</li>
+								<li>
+									<a class="footer__link footer__link1" href="#"></a>
+								</li>
+								<li>
+									<a class="footer__link footer__link2" href="#"></a>
+								</li>
+								<li>
+									<a class="footer__link footer__link3" href="#"></a>
+								</li>
+								<li>
+									<a class="footer__link footer__link4" href="#"></a>
+								</li>
+								<li>
+									<a class="footer__link footer__link5" href="#"></a>
+								</li>
+								<li>
+									<a class="footer__link footer__link6" href="#"></a>
+								</li>
+							</ul>
+							<ul class="footer__buttom-menu">
+								<li>Все права защищены © АНО «еНано» 2021</li>
+								<li>русский</li>
+								<li class="footer__mini-logo"><a href="#"></a></li>
+							</ul>
+					</footer>
+			</div>
+
+		</section>
+
 	</div>
-	</section>
-		<script src="js/script.min.js"></script>
+
+	<script src="js/script.min.js"></script>
 
 </body>
 

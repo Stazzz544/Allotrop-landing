@@ -1,5 +1,5 @@
 /**
- * Swiper 6.4.15
+ * Swiper 6.5.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -7,7 +7,7 @@
  *
  * Released under the MIT License
  *
- * Released on: February 18, 2021
+ * Released on: March 5, 2021
  */
 
 @font-face {
@@ -1331,7 +1331,7 @@ header {
 
 .fp-tooltip {
   color: #b4aa78 !important;
-  font-family: BankGothicRUSS !important;
+  font-family: muller !important;
 }
 
 .container {
@@ -1368,7 +1368,7 @@ header {
   margin-top: 26px;
   color: #b4aa78;
   font-family: BankGothicRUSS;
-  font-size: 15.1px;
+  font-size: 15px;
   line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1502,7 +1502,7 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(50%, black), color-stop(97%, rgba(0, 0, 0, 0)), color-stop(98%, rgba(0, 0, 0, 0)));
   background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 50%, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0) 98%);
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 50%, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0) 98%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#00000000', GradientType=0);
 }
 
 .planet {
@@ -1976,114 +1976,239 @@ body {
   left: 49px;
 }
 
-.gallery {
-  background: url("../img/section-5/bg/bg.jpg") 0 0/cover no-repeat;
-}
-
 .gallery__title {
-  margin-top: 45px;
+  margin-top: 30px;
 }
 
-img {
-  vertical-align: middle;
+.swiper-params {
+  width: 900px;
+  height: 70%;
 }
 
-/* Position the image container (needed to position the left and right arrows) */
-
-.img-container {
-  position: relative;
-  margin: 0 auto;
-  width: 80%;
-  margin-top: 50px;
+.swiper-container {
+  width: 100%;
+  height: 83%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
 
-/* Hide the images by default */
-
-.mySlides {
-  display: none;
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
-
-.cursor {
-  cursor: pointer;
+.swiper-slide2 {
+  background-position: 0px 0px;
 }
 
-/* Next & previous buttons */
-
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
-  -webkit-user-select: none;
+.gallery-top {
+  height: 80%;
+  width: 100%;
 }
 
-/* Position the "next button" to the right */
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+.gallery-thumbs {
+  height: 25%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 0;
+  margin-top: 8px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text */
-
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-
-.column {
-  float: left;
+.gallery-thumbs .swiper-slide {
   width: 25%;
+  height: 100%;
+  opacity: 0.4;
 }
 
-/* Add a transparency effect for thumnbail images */
-
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
+.gallery-thumbs .swiper-slide-thumb-active {
   opacity: 1;
+}
+
+.footer__main-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+.footer__flex-container {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 55%;
+          flex: 0 0 55%;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 8%;
+  padding: 0 0 53px 0;
+}
+
+.footer__logo {
+  background: url("../img/section-6/logo_footer.jpg") 0 0/cover no-repeat;
+  height: 220px;
+  width: 300px;
+}
+
+.footer__button {
+  margin: 0 auto;
+  width: 168px;
+  height: 42px;
+  margin-top: 10px;
+}
+
+.footer__title {
+  text-align: left;
+}
+
+.footer__subtitle {
+  margin-top: 5px;
+  color: #b4aa78;
+  font-family: Muller;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -.05em;
+}
+
+.footer__subtitle:nth-child(2) {
+  margin-top: 35px;
+}
+
+.footer__subtitle:nth-child(3) {
+  margin-top: 35px;
+}
+
+.footer__subtitle span {
+  color: #d8d2b3;
+  font-family: Muller;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: -.05em;
+  text-transform: none;
+  padding-left: 7px;
+}
+
+.footer__footer {
+  padding-top: 20px;
+  background-color: #10100f;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  width: 465px;
+}
+
+.footer__about li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  width: 36px;
+  height: 33px;
+}
+
+.footer__about li a {
+  display: block;
+  width: 26px;
+  height: 23px;
+}
+
+.footer__about-text {
+  padding-right: 30px;
+  width: 300px !important;
+  white-space: nowrap;
+  color: #b4aa78;
+  font-family: BankGothicRUSS;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -.05em;
+}
+
+.footer__link1 {
+  background: url("../img/section-6/icons/1.png") center center/contain no-repeat;
+}
+
+.footer__link2 {
+  background: url("../img/section-6/icons/2.png") center center/contain no-repeat;
+}
+
+.footer__link3 {
+  background: url("../img/section-6/icons/3.png") center center/contain no-repeat;
+}
+
+.footer__link4 {
+  background: url("../img/section-6/icons/4.png") center center/contain no-repeat;
+}
+
+.footer__link5 {
+  background: url("../img/section-6/icons/5.png") center center/contain no-repeat;
+}
+
+.footer__link6 {
+  background: url("../img/section-6/icons/6.png") center center/contain no-repeat;
+}
+
+.footer__buttom-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 550px;
+  color: #d8d2b3;
+  font-family: Muller;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: -.05em;
+  text-transform: none;
+  padding-left: 7px;
+  margin: 0 auto;
+}
+
+.footer__mini-logo a {
+  display: block;
+  background: url("../img/section-6/logo/logo-mini.png") center 30px/contain no-repeat;
+  height: 100px;
+  width: 100px;
 }
 
 @media (max-height: 660px), (max-width: 1100px) {
@@ -2230,17 +2355,17 @@ img {
   }
 }
 
-@media (max-width: 900px) {
-  .section-bg {
-    height: 100% !important;
-  }
-}
-
 @media (max-height: 620px), (max-width: 900px) {
   .spaceship__discription {
     font-size: 16px;
     line-height: 18px;
     padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 899px) {
+  .swiper-params {
+    width: 80%;
   }
 }
 
@@ -2336,7 +2461,21 @@ img {
 
 .webp .tabs__link_active { background: url(../img/section-4/bg/small-active.webp) 100% 100%/100% 100% no-repeat; }
 
-.webp .gallery { background: url(../img/section-5/bg/bg.webp) 0 0/cover no-repeat; }
+.webp .footer__logo { background: url(../img/section-6/logo_footer.webp) 0 0/cover no-repeat; }
+
+.webp .footer__link1 { background: url(../img/section-6/icons/1.webp) center center/contain no-repeat; }
+
+.webp .footer__link2 { background: url(../img/section-6/icons/2.webp) center center/contain no-repeat; }
+
+.webp .footer__link3 { background: url(../img/section-6/icons/3.webp) center center/contain no-repeat; }
+
+.webp .footer__link4 { background: url(../img/section-6/icons/4.webp) center center/contain no-repeat; }
+
+.webp .footer__link5 { background: url(../img/section-6/icons/5.webp) center center/contain no-repeat; }
+
+.webp .footer__link6 { background: url(../img/section-6/icons/6.webp) center center/contain no-repeat; }
+
+.webp .footer__mini-logo a { background: url(../img/section-6/logo/logo-mini.webp) center 30px/contain no-repeat; }
 
 @media (max-height: 710px), (max-width: 1000px) {
 

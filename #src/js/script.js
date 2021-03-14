@@ -1,4 +1,6 @@
+@@include('swiper-bundle.js');
 @@include('fullpage.js');//полноэкранный скролл
+
 
 //функция для подключения webp
 function testWebP(callback) {
@@ -47,9 +49,9 @@ window.addEventListener('DOMContentLoaded', () => {
 new fullpage('#fullpage', {
 	//options here
 	autoScrolling: true,//включает поэкранный скролл
-	anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage'],
+	anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage','sixthPage'],
 	navigation: true,//буллиты навигации справа
-	navigationTooltips: ['Главная', 'О планете', 'Миссия', 'Наука', 'Галерея'],
+	navigationTooltips: ['Главная', 'О планете', 'Миссия', 'Особенности', 'Галерея', 'Дата релиза'],
 	dragAndMove: true, //разрешает скролл на мобилах пальцем
 	responsiveWidth: 900, //убераем прокрутку на определённом типе экрана
 	verticalCentered: false, //Вертикальное центрирование контента в разделах
@@ -123,32 +125,21 @@ var $tabs = function (target) {
 $tabs('.tabs');
 
 
-//gallery
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-	showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-	showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-	var i;
-	var slides = document.getElementsByClassName("mySlides");
-	var dots = document.getElementsByClassName("demo");
-	var captionText = document.getElementById("caption");
-	if (n > slides.length) { slideIndex = 1 }
-	if (n < 1) { slideIndex = slides.length }
-	for (i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";
+ //SECTION, gallery
+ var galleryThumbs = new Swiper('.gallery-thumbs', {
+	spaceBetween: 10,
+	slidesPerView: 4,
+	freeMode: true,
+	watchSlidesVisibility: true,
+	watchSlidesProgress: true,
+});
+var galleryTop = new Swiper('.gallery-top', {
+	spaceBetween: 10,
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	thumbs: {
+		swiper: galleryThumbs
 	}
-	for (i = 0; i < dots.length; i++) {
-		dots[i].className = dots[i].className.replace(" active", "");
-	}
-	slides[slideIndex - 1].style.display = "block";
-	dots[slideIndex - 1].className += " active";
-	captionText.innerHTML = dots[slideIndex - 1].alt;
-};
+});
