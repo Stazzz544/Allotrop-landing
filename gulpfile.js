@@ -1,4 +1,4 @@
-let project_folder= require('path').basename(__dirname); //сюда будет выгружаться готовый проект,папка создастся с тем названием, которое сы впишем тут!
+let project_folder = require('path').basename(__dirname); //сюда будет выгружаться готовый проект,папка создастся с тем названием, которое сы впишем тут!
 let source_folder = "#src"; //папка с исходниками
 let fs = require('fs');//переменная для подключения автоматического шрифтов
 
@@ -11,7 +11,7 @@ let path = {
 		fonts: project_folder + "/fonts",
 	},
 	src: {  //пути вывода готовых файлов проекта
-		html: [source_folder + "/*.html", "!"+source_folder + "/_*.html"],//исключаем все файлы начинающиеся с символа подчёркивание
+		html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],//исключаем все файлы начинающиеся с символа подчёркивание
 		css: source_folder + "/scss/style.scss",
 		js: source_folder + "/js/script.js",
 		img: source_folder + "/img/**/*.+(png|jpg|gif|ico|svg|webp)",  //две звёздочки означает, что мы будем слушать все подпапки в папке src/img, одна звёздочка - любое название
@@ -129,7 +129,7 @@ function images() {
 		.pipe(
 			imagemin({
 				progressive: true,
-				svgoPlugins: [{removeViewBox: false }],
+				svgoPlugins: [{ removeViewBox: false }],
 				interlaced: true,
 				optimizationLevel: 3 // 0 to 7
 			})
@@ -151,7 +151,7 @@ function fonts() {
 //инструкция:
 //в терминале пишем gulp otf2ttf
 //в папке src появятся сконвертированные шрифты в формате ttf
-gulp.task('otf2ttf', function() {
+gulp.task('otf2ttf', function () {
 	return src([source_folder + '/fonts/*.otf'])
 		.pipe(fonter({
 			formats: ['ttf']

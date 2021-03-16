@@ -171,6 +171,7 @@ header {
 		}
 
 		&:hover .buttonBG {
+			border-radius: 7px;
 			opacity   : 1;
 			transition: opacity ease 0.5s;
 		}
@@ -294,6 +295,8 @@ body {
 	}
 }
 
+
+
 .content {
 	&__discription {
 		margin-top     : 230px;
@@ -311,18 +314,16 @@ body {
 	}
 
 	&__button {
-
 		font-size: 19px;
 		width    : 222px;
 		height   : 63px;
-
 		&:hover {
 			color : #29201a;
-			border: none;
 		}
 
 		&:hover .buttonBG {
 			opacity   : 1;
+			border-radius: 7px;
 			transition: opacity ease 0.5s;
 		}
 
@@ -558,7 +559,7 @@ body {
 	}
 
 	.planet {
-		background: url('../img/section-2/bg2.3.png') 50% 20px /auto 560px no-repeat;
+		background: url('../img/section-2/bg2.3.jpg') 50% 20px /auto 560px no-repeat;
 	}
 
 	.planet__discription {
@@ -580,7 +581,7 @@ body {
 	}
 
 	.planet {
-		background: url('../img/section-2/bg2.3.png') 50% 5px /auto 560px no-repeat;
+		background: url('../img/section-2/bg2.3.jpg') 50% 5px /auto 560px no-repeat;
 	}
 }
 

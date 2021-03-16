@@ -1419,6 +1419,7 @@ header {
 }
 
 .navigation__access:hover .buttonBG {
+  border-radius: 7px;
   opacity: 1;
   -webkit-transition: opacity ease 0.5s;
   -o-transition: opacity ease 0.5s;
@@ -1477,11 +1478,11 @@ body {
 
 .content__button:hover {
   color: #29201a;
-  border: none;
 }
 
 .content__button:hover .buttonBG {
   opacity: 1;
+  border-radius: 7px;
   -webkit-transition: opacity ease 0.5s;
   -o-transition: opacity ease 0.5s;
   transition: opacity ease 0.5s;
@@ -2225,7 +2226,7 @@ body {
   }
 
   .planet {
-    background: url("../img/section-2/bg2.3.png") 50% 20px/auto 560px no-repeat;
+    background: url("../img/section-2/bg2.3.jpg") 50% 20px/auto 560px no-repeat;
   }
 
   .planet__discription {
@@ -2399,7 +2400,7 @@ body {
   }
 
   .planet {
-    background: url("../img/section-2/bg2.3.png") 50% 5px/auto 560px no-repeat;
+    background: url("../img/section-2/bg2.3.jpg") 50% 5px/auto 560px no-repeat;
   }
 }
 
