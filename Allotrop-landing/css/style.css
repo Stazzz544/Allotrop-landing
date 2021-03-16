@@ -1258,6 +1258,20 @@ header {
   height: 0 !important;
 }
 
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-next:after {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+#fp-nav ul li {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
 .title {
   font-family: BankGothicRUSS;
   text-align: center;
@@ -1478,6 +1492,7 @@ body {
 
 .content__button:hover {
   color: #29201a;
+  border: none;
 }
 
 .content__button:hover .buttonBG {

@@ -14,6 +14,17 @@ header {
 
 }
 
+//safari fix
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after{
+	-webkit-transform: translate3d(0,0,0);
+}
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after{
+	-webkit-transform: translate3d(0,0,0);
+}
+#fp-nav ul li{
+	-webkit-transform: translate3d(0,0,0);
+}
+
 
 //re-useble classes
 .title {
@@ -319,6 +330,7 @@ body {
 		height   : 63px;
 		&:hover {
 			color : #29201a;
+			border: none;
 		}
 
 		&:hover .buttonBG {
@@ -334,7 +346,7 @@ body {
 }
 
 
-//перемычка
+//перемычка translate3d: (0, 0, 0,);
 
 .planet:before {
 	content         : "";
