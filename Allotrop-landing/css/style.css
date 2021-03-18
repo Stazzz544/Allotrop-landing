@@ -784,8 +784,16 @@ button.swiper-pagination-bullet {
 @font-face {
   font-family: "Muller";
   font-display: swap;
-  src: url("../fonts/MullerBold.woff") format("woff"), url("../fonts/MullerBold.woff2") format("woff2");
-  font-weight: 700;
+  src: url("../fonts/MullerThin.woff") format("woff"), url("../fonts/MullerThin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Muller";
+  font-display: swap;
+  src: url("../fonts/MullerHairline.woff") format("woff"), url("../fonts/MullerHairline.woff2") format("woff2");
+  font-weight: 200;
   font-style: bold;
 }
 
@@ -794,6 +802,38 @@ button.swiper-pagination-bullet {
   font-display: swap;
   src: url("../fonts/MullerLight.woff") format("woff"), url("../fonts/MullerLight.woff2") format("woff2");
   font-weight: 300;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Muller";
+  font-display: swap;
+  src: url("../fonts/MullerRegular.woff") format("woff"), url("../fonts/MullerRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Muller";
+  font-display: swap;
+  src: url("../fonts/Mullermedium.woff") format("woff"), url("../fonts/Mullermedium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Muller";
+  font-display: swap;
+  src: url("../fonts/MullerBold.woff") format("woff"), url("../fonts/MullerBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Muller";
+  font-display: swap;
+  src: url("../fonts/MullerBlack.woff") format("woff"), url("../fonts/MullerBlack.woff2") format("woff2");
+  font-weight: 900;
   font-style: bold;
 }
 
@@ -1250,7 +1290,7 @@ body {
 }
 
 header {
-  display: none;
+  margin-top: 20px;
 }
 
 .fp-tableCell {
@@ -1269,11 +1309,12 @@ header {
 }
 
 .discription {
-  font-size: 23px;
-  line-height: 36px;
-  font-weight: 300;
+  font-size: 28px;
+  line-height: 41px;
+  font-weight: 400;
   letter-spacing: -0.025em;
   color: #a59b6e;
+  font-family: muller;
 }
 
 .button {
@@ -1329,17 +1370,6 @@ header {
   z-index: -2;
 }
 
-.fp-tooltip {
-  color: #b4aa78 !important;
-  font-family: muller !important;
-}
-
-.container {
-  max-width: 1160px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .wrapper {
   max-width: 1050px;
   margin: 0 auto;
@@ -1347,11 +1377,15 @@ header {
 
 .navigation {
   position: fixed;
-  max-width: 1100px;
+  max-width: 1400px;
   padding: 0px 30px 0 0;
   top: 30px;
   z-index: 1000;
   width: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+      -ms-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
 }
 
 .navigation__flex {
@@ -1368,17 +1402,23 @@ header {
   margin-top: 26px;
   color: #b4aa78;
   font-family: BankGothicRUSS;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -0.05em;
 }
 
+.navigation__link_last-points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .navigation__logo {
   display: inline-block;
-  margin-top: -26px;
-  width: 180px;
+  margin-top: -60px;
+  width: 260px;
 }
 
 .navigation__language {
@@ -1406,11 +1446,12 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 190px;
+  width: 200px;
   height: 51px;
   border: 2px solid #b4aa78;
   border-radius: 7px;
   margin-top: 12px;
+  margin-left: 30px;
 }
 
 .navigation__access:hover {
@@ -1423,10 +1464,6 @@ header {
   -webkit-transition: opacity ease 0.5s;
   -o-transition: opacity ease 0.5s;
   transition: opacity ease 0.5s;
-}
-
-body {
-  background-color: black;
 }
 
 .main-section__content {
@@ -1444,16 +1481,15 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 995px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .content__discription {
-  margin-top: 230px;
+  margin-top: 260px;
   text-align: justify;
   -moz-text-align-last: center;
        text-align-last: center;
-  max-width: 900px;
 }
 
 .content__buttons {
@@ -1503,6 +1539,21 @@ body {
   background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 50%, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0) 98%);
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 50%, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0) 98%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#00000000', GradientType=0);
+}
+
+body {
+  background-color: black;
+}
+
+.fp-tooltip {
+  color: #b4aa78 !important;
+  font-family: muller !important;
+}
+
+.container {
+  max-width: 1235px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .planet {
@@ -2211,6 +2262,54 @@ body {
   width: 100px;
 }
 
+@media (max-width: 1537px) {
+  .discription {
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 500;
+    max-width: 733px;
+  }
+
+  .navigation {
+    max-width: 930px;
+  }
+
+  .navigation__link {
+    font-size: 11px;
+  }
+
+  .navigation__logo {
+    display: inline-block;
+    width: 204px;
+    margin-top: -47px;
+  }
+
+  .navigation__access {
+    width: 141px;
+    height: 40px;
+    margin-top: 16px;
+  }
+
+  .discription {
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 500;
+    max-width: 733px;
+  }
+
+  .content__buttons {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 1519px) {
+  .content__button {
+    font-size: 14px;
+    width: 185px;
+    height: 53px;
+  }
+}
+
 @media (max-height: 660px), (max-width: 1100px) {
   .spaceship__discription {
     font-size: 19px;
@@ -2237,6 +2336,10 @@ body {
 @media (max-width: 992px) {
   header {
     display: block;
+  }
+
+  .navigation__link {
+    font-size: 13px;
   }
 
   #fp-nav {
@@ -2369,12 +2472,26 @@ body {
   }
 }
 
+@media (max-width: 442px) {
+  .content__button:nth-child(1) {
+    display: none;
+  }
+
+  element.style {
+    height: 100%;
+  }
+
+  .main-section__content {
+    height: 100%;
+  }
+}
+
 @media (max-height: 646px) {
   .content__discription {
     max-width: 780px;
     font-size: 17px;
     line-height: 25px;
-    font-weight: 300;
+    font-weight: 500;
     letter-spacing: -.025em;
     color: #a59b6e;
   }
