@@ -132,6 +132,17 @@ $tabs('.tabs');
 	freeMode: true,
 	watchSlidesVisibility: true,
 	watchSlidesProgress: true,
+	breakpoints: {
+			// when window width is >= 320px
+		374: {
+			slidesPerView: 2,
+			spaceBetween: 20
+			},
+		720: {
+			slidesPerView: 4,
+			spaceBetween: 20
+			},
+	}
 });
 var galleryTop = new Swiper('.gallery-top', {
 	spaceBetween: 10,

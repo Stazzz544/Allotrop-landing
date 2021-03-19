@@ -104,9 +104,6 @@
 	font-weight: 500;
 	max-width: 733px;
 	}
-	.content__buttons {
-		margin-top: 50px;
-  }
 }
 
 
@@ -116,9 +113,16 @@
 	header {
 		display: block;
 	}
+	.navigation__link_last-points{
+		flex-direction: column;
+		align-items: center;
+	}
 	.navigation__link {
 		font-size: 13px;
-  }
+	}
+	.navigation__access{
+		margin: 0;
+	}
 	#fp-nav {
 		display: none;
 	}
@@ -210,5 +214,17 @@
 		top       : 0;
 		left      : 0;
 		transition: all 1s;
+	}
+}
+
+@media (max-width: 360px) {
+	.navigation {
+		left: 54%;
+	}
+	.navigation__flex_active {
+		left: -4%;
+	}
+	.navigation__flex {
+		height: 104vh;
 	}
 }

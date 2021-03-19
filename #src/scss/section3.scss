@@ -1,0 +1,56 @@
+//section 3
+
+.spaceship {
+	// background: url('../img/section-3/bg3.jpg') 0px 0px /cover no-repeat;
+
+	&__title {
+		margin-top: 94px;
+	}
+
+	&__flex {
+		margin-top : 64px;
+		display    : flex;
+		align-items: flex-end;
+		align-items: flex-end;
+		height     : 73vh;
+	}
+
+	&__place {
+		flex: 1 1 40%;
+	}
+
+	&__discription {
+		text-align : right;
+		flex       : 1 1 70%;
+		line-height: 30px;
+		margin-right: 10%;
+	}
+}
+
+@media (max-width: 1700px){
+
+}
+
+
+@media (max-height: 660px),
+(max-width: 1100px) {
+	.spaceship__discription {
+		font-size     : 19px;
+		line-height   : 18px;
+		padding-bottom: 30px;
+	}
+}
+
+@media (max-height: 998px){
+
+}
+
+
+@media (max-height: 620px),
+(max-width: 900px) {
+	.spaceship__discription {
+		font-size     : 16px;
+		line-height   : 18px;
+		padding-bottom: 30px;
+	}
+}

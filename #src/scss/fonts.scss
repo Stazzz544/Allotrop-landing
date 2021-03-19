@@ -3,15 +3,16 @@
 
 
 
-@include font ("Muller", "MullerThin", "100", "bold" );
+@include font ("Muller", "MullerThin", "100", "Thin" );
 
-@include font ("Muller", "MullerHairline", "200", "bold" );
+@include font ("Muller", "MullerHairline", "200", "Hairline" );
 
-@include font ("Muller", "MullerLight", "300", "bold" );
-@include font ("Muller", "MullerRegular", "400", "bold" );
+@include font ("Muller", "MullerLight", "300", "Light" );
 
-@include font ("Muller", "Mullermedium", "500", "bold" );
+@include font ("Muller", "MullerRegular", "400", "Regular" );
+
+@include font ("Muller", "MullerMedium", "500", "medium" );
 
 @include font ("Muller", "MullerBold", "700", "bold" );
 
-@include font ("Muller", "MullerBlack", "900", "bold" );
+@include font ("Muller", "MullerBlack", "900", "rBlack" );

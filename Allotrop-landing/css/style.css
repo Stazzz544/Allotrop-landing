@@ -786,7 +786,7 @@ button.swiper-pagination-bullet {
   font-display: swap;
   src: url("../fonts/MullerThin.woff") format("woff"), url("../fonts/MullerThin.woff2") format("woff2");
   font-weight: 100;
-  font-style: bold;
+  font-style: Thin;
 }
 
 @font-face {
@@ -794,7 +794,7 @@ button.swiper-pagination-bullet {
   font-display: swap;
   src: url("../fonts/MullerHairline.woff") format("woff"), url("../fonts/MullerHairline.woff2") format("woff2");
   font-weight: 200;
-  font-style: bold;
+  font-style: Hairline;
 }
 
 @font-face {
@@ -802,7 +802,7 @@ button.swiper-pagination-bullet {
   font-display: swap;
   src: url("../fonts/MullerLight.woff") format("woff"), url("../fonts/MullerLight.woff2") format("woff2");
   font-weight: 300;
-  font-style: bold;
+  font-style: Light;
 }
 
 @font-face {
@@ -810,15 +810,15 @@ button.swiper-pagination-bullet {
   font-display: swap;
   src: url("../fonts/MullerRegular.woff") format("woff"), url("../fonts/MullerRegular.woff2") format("woff2");
   font-weight: 400;
-  font-style: bold;
+  font-style: Regular;
 }
 
 @font-face {
   font-family: "Muller";
   font-display: swap;
-  src: url("../fonts/Mullermedium.woff") format("woff"), url("../fonts/Mullermedium.woff2") format("woff2");
+  src: url("../fonts/MullerMedium.woff") format("woff"), url("../fonts/MullerMedium.woff2") format("woff2");
   font-weight: 500;
-  font-style: bold;
+  font-style: medium;
 }
 
 @font-face {
@@ -834,7 +834,7 @@ button.swiper-pagination-bullet {
   font-display: swap;
   src: url("../fonts/MullerBlack.woff") format("woff"), url("../fonts/MullerBlack.woff2") format("woff2");
   font-weight: 900;
-  font-style: bold;
+  font-style: rBlack;
 }
 
 /*------reset styles start-------*/
@@ -1298,28 +1298,15 @@ header {
   height: 0 !important;
 }
 
-.swiper-button-next:after,
-.swiper-container-rtl .swiper-button-prev:after {
-  -webkit-transform: translate3d(0, 0, 0);
-}
-
-.swiper-button-prev:after,
-.swiper-container-rtl .swiper-button-next:after {
-  -webkit-transform: translate3d(0, 0, 0);
-}
-
-#fp-nav ul li {
-  -webkit-transform: translate3d(0, 0, 0);
-}
-
 .title {
   font-family: BankGothicRUSS;
   text-align: center;
-  font-size: 26px;
+  font-size: 40px;
   line-height: 36px;
   font-weight: 700;
   letter-spacing: -.05em;
   color: #8c8256;
+  text-shadow: 2px 2px 10px #000000;
 }
 
 .discription {
@@ -1329,6 +1316,7 @@ header {
   letter-spacing: -0.025em;
   color: #a59b6e;
   font-family: muller;
+  text-shadow: 2px 2px 10px #000000;
 }
 
 .button {
@@ -1474,7 +1462,6 @@ header {
 }
 
 .navigation__access:hover .buttonBG {
-  border-radius: 7px;
   opacity: 1;
   -webkit-transition: opacity ease 0.5s;
   -o-transition: opacity ease 0.5s;
@@ -1533,7 +1520,6 @@ header {
 
 .content__button:hover .buttonBG {
   opacity: 1;
-  border-radius: 7px;
   -webkit-transition: opacity ease 0.5s;
   -o-transition: opacity ease 0.5s;
   transition: opacity ease 0.5s;
@@ -1557,27 +1543,19 @@ header {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#00000000', GradientType=0);
 }
 
-body {
-  background-color: black;
-}
-
-.fp-tooltip {
-  color: #b4aa78 !important;
-  font-family: muller !important;
-}
-
-.container {
-  max-width: 1235px;
+.container-planet {
   margin: 0 auto;
-  padding: 0 15px;
+  width: 1400px;
 }
 
 .planet {
   background: url("../img/section-2/bg2.3.jpg") 50% 42px/auto 560px no-repeat;
-}
-
-.planet__title {
-  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .planet__icons-flex {
@@ -1658,7 +1636,6 @@ body {
        text-align-last: center;
   font-size: 20px;
   line-height: 28px;
-  max-width: 1000px;
   margin: 0 auto;
   margin-top: 130px;
   padding: 0px 15px;
@@ -1768,7 +1745,7 @@ body {
 }
 
 .spaceship__flex {
-  margin-top: 25px;
+  margin-top: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1790,15 +1767,22 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 70%;
           flex: 1 1 70%;
-  line-height: 25px;
+  line-height: 30px;
+  margin-right: 10%;
 }
 
 .solution {
   background: url("../img/section-4/bg/main-bg.jpg") 0 0/cover no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .solution__title {
-  margin-top: 45px;
+  margin-bottom: 45px;
 }
 
 .solution__mainflex {
@@ -1950,7 +1934,7 @@ body {
   -ms-flex-item-align: start;
       align-self: flex-start;
   font-family: Muller;
-  font-size: 21px;
+  font-size: 19px;
   line-height: 26px;
   color: #9c9b98;
 }
@@ -2043,13 +2027,23 @@ body {
   left: 49px;
 }
 
-.gallery__title {
-  margin-top: 30px;
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .swiper-params {
-  width: 900px;
-  height: 70%;
+  width: 906px;
+  height: 67%;
+  padding-bottom: 30px !important;
 }
 
 .swiper-container {
@@ -2278,12 +2272,31 @@ body {
   width: 100px;
 }
 
+body {
+  background-color: black;
+}
+
+.fp-tooltip {
+  color: #b4aa78 !important;
+  font-family: muller !important;
+}
+
+.container {
+  max-width: 1235px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 @media (max-width: 1537px) {
   .discription {
     font-size: 17px;
     line-height: 25px;
     font-weight: 500;
     max-width: 733px;
+  }
+
+  .title {
+    font-size: 30px;
   }
 
   .navigation {
@@ -2324,6 +2337,23 @@ body {
     width: 185px;
     height: 53px;
   }
+
+  .swiper-params {
+    width: 839px;
+    height: 67%;
+  }
+}
+
+@media (max-width: 1350px) {
+  .swiper-params {
+    width: 666px;
+    height: 67%;
+  }
+
+  .title {
+    font-size: 27px;
+    margin-top: 20px;
+  }
 }
 
 @media (max-height: 660px), (max-width: 1100px) {
@@ -2340,7 +2370,7 @@ body {
   }
 
   .planet {
-    background: url("../img/section-2/bg2.3.jpg") 50% 20px/auto 560px no-repeat;
+    background: url("../img/section-2/bg2.3.png") 50% 20px/auto 560px no-repeat;
   }
 
   .planet__discription {
@@ -2354,8 +2384,22 @@ body {
     display: block;
   }
 
+  .navigation__link_last-points {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
   .navigation__link {
     font-size: 13px;
+  }
+
+  .navigation__access {
+    margin: 0;
   }
 
   #fp-nav {
@@ -2474,6 +2518,22 @@ body {
   }
 }
 
+@media (max-width: 900px) {
+  .section-bg {
+    height: 100%;
+  }
+
+  .main-section {
+    height: 100% !important;
+    min-height: 100vh !important;
+  }
+
+  .main-section__content {
+    height: 100%;
+    min-height: 100vh;
+  }
+}
+
 @media (max-height: 620px), (max-width: 900px) {
   .spaceship__discription {
     font-size: 16px;
@@ -2482,23 +2542,53 @@ body {
   }
 }
 
-@media (max-width: 899px) {
+@media (max-width: 673px) {
   .swiper-params {
-    width: 80%;
+    width: 100%;
+    height: 67%;
+  }
+}
+
+@media (max-width: 640px) {
+  .main-section__content {
+    height: 100%;
+    min-height: 100vh;
+  }
+
+  .content__discription {
+    margin-top: 300px;
   }
 }
 
 @media (max-width: 442px) {
-  .content__button:nth-child(1) {
+  .content__button:nth-child(2) {
     display: none;
   }
+}
 
-  element.style {
-    height: 100%;
+@media (max-width: 374px) {
+  .content__buttons {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 370px) {
+  .gallery-thumbs {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .navigation {
+    left: 54%;
   }
 
-  .main-section__content {
-    height: 100%;
+  .navigation__flex_active {
+    left: -4%;
+  }
+
+  .navigation__flex {
+    height: 104vh;
   }
 }
 
@@ -2519,6 +2609,16 @@ body {
   }
 }
 
+@media (max-height: 600px) {
+  .content__discription {
+    margin-top: 175px;
+  }
+
+  .content__buttons {
+    margin-bottom: 30px;
+  }
+}
+
 @media (max-height: 650px) {
   .planet__discription {
     margin-top: 80px;
@@ -2532,7 +2632,7 @@ body {
   }
 
   .planet {
-    background: url("../img/section-2/bg2.3.jpg") 50% 5px/auto 560px no-repeat;
+    background: url("../img/section-2/bg2.3.png") 50% 5px/auto 560px no-repeat;
   }
 }
 

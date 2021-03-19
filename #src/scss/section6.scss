@@ -1,0 +1,160 @@
+//section footer
+.footer {
+	&__main-flex{
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+	}
+	&__flex-container {
+		flex:0 0 55%;
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		margin-top: 8%;
+		padding: 0 0 53px 0;
+	}
+
+	&__logo-and-button {
+	}
+
+	&__logo {
+		background: url('../img/section-6/logo_footer.jpg') 0 0/cover no-repeat;
+		height: 220px;
+		width: 300px;
+	}
+
+	&__button {
+		margin: 0 auto;
+		width: 168px;
+		height: 42px;
+		margin-top: 10px;
+	}
+
+	&__text {
+	}
+
+	&__title {
+		text-align: left;
+	}
+
+	&__subtitle {
+		margin-top: 5px;
+		color: #b4aa78;
+		font-family: Muller;
+		font-size: 15px;
+		line-height: 20px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: -.05em;
+		&:nth-child(2){
+			margin-top: 35px;
+		}
+		&:nth-child(3){
+			margin-top: 35px;
+		}
+		
+		span{
+			color: #d8d2b3;
+			font-family: Muller;
+			font-size: 15px;
+			line-height: 20px;
+			font-weight: 300;
+			letter-spacing: -.05em;
+			text-transform: none;
+			padding-left: 7px;
+		}
+	}
+}
+
+.footer {
+
+	&__footer {
+		padding-top: 20px;
+		background-color: #10100f;
+		flex:1 1 30%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&__about {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 0 auto;
+		width: 465px;
+		li{
+			flex:1 1 100%;
+			width: 36px;
+			height: 33px;
+			a{
+				display: block;
+				width: 26px;
+				height: 23px;
+			}
+		}
+	}
+	&__about-text{
+		padding-right: 30px;
+		width: 300px!important;
+		white-space: nowrap;
+		color: #b4aa78;
+		font-family: BankGothicRUSS;
+		font-size: 15px;
+		line-height: 20px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: -.05em;
+	}
+
+	&__link {
+
+	}
+	&__link1 {
+		background: url('../img/section-6/icons/1.png') center center/contain  no-repeat ;
+	}
+	&__link2 {
+		background: url('../img/section-6/icons/2.png') center center/contain  no-repeat ;
+	}
+	&__link3 {
+		background: url('../img/section-6/icons/3.png') center center/contain  no-repeat ;
+	}
+	&__link4 {
+		background: url('../img/section-6/icons/4.png') center center/contain  no-repeat ;
+	}
+	&__link5 {
+		background: url('../img/section-6/icons/5.png') center center/contain  no-repeat ;
+	}
+	&__link6 {
+		background: url('../img/section-6/icons/6.png') center center/contain  no-repeat;
+	}
+	&__buttom-menu{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 550px;
+		color: #d8d2b3;
+		font-family: Muller;
+		font-size: 15px;
+		line-height: 20px;
+		font-weight: 300;
+		letter-spacing: -.05em;
+		text-transform: none;
+		padding-left: 7px;
+
+		margin: 0 auto;
+
+
+	}
+	&__mini-logo{
+
+		a {
+		display: block;
+		background: url('../img/section-6/logo/logo-mini.png') center 30px /contain  no-repeat;
+		height: 100px;
+		width: 100px;
+		}
+	}
+}
+

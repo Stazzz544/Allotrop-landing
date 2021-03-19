@@ -68,20 +68,59 @@
 	filter          : progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#00000000', GradientType=0);
 }
 
+@media (max-width: 1537px) {
+	.content__buttons {
+		margin-top: 50px;
+  }
+}
+
+
 @media (max-width: 1519px) {
-	.content__discription {
-
-	}
-
 	.content__button {
 		font-size: 14px;
 		width    : 185px;
 		height   : 53px;
+	}
+}
 
+@media (max-width: 900px) {
+	.main-section{
+		height: 100%!important;
+		min-height: 100vh!important;
+	}
+	.main-section__content{
+			height: 100%;
+			min-height: 100vh;
+	}
+}
+
+@media (max-width: 640px) {
+	.main-section__content{
+		height: 100%;
+		min-height: 100vh;
 	}
 }
 
 
+@media (max-width:442px) {
+	.content__button:nth-child(2) {
+		display: none;
+  }
+}
+
+@media (max-width: 640px) {
+	.content__discription{
+		margin-top: 300px;
+	}
+}
+
+@media (max-width:374px) {
+	.content__buttons {
+		margin-bottom: 30px;
+	}
+}
+
+//по высоте
 @media (max-height: 646px) {
 	.content__discription {
 		max-width     : 780px;
@@ -99,14 +138,14 @@
 	}
 }
 
-@media (max-width:442px) {
-	.content__button:nth-child(1) {
-		display: none;
-  }
-  element.style {
-	height: 100%;
+@media (max-height: 600px) {
+	.content__discription {
+		margin-top: 175px;
 	}
-	.main-section__content{
-		height: 100%;
+}
+
+@media (max-height: 600px){
+	.content__buttons {
+		margin-bottom: 30px;
 	}
 }
