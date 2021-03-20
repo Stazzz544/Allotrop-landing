@@ -1462,6 +1462,7 @@ body {
   -webkit-transition: opacity ease 0.5s;
   -o-transition: opacity ease 0.5s;
   transition: opacity ease 0.5s;
+  border-radius: 7px;
 }
 
 .main-section {
@@ -1520,6 +1521,7 @@ body {
 }
 
 .content__button:hover .buttonBG {
+  border-radius: 7px;
   opacity: 1;
   -webkit-transition: opacity ease 0.5s;
   -o-transition: opacity ease 0.5s;
@@ -2316,6 +2318,24 @@ body {
   padding: 0 15px;
 }
 
+#fp-nav ul li a {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.swiper-button-next {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.swiper-button-prev {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.safari-fix-center {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+
 @media (max-width: 1537px) {
   .discription {
     font-size: 17px;
@@ -2427,9 +2447,9 @@ body {
   }
 
   .planet__flex-item {
-    width: 80px;
+    width: 79px;
     height: 80px;
-    background-size: 56px 62px;
+    background-size: 55px 62px;
   }
 
   .planet__flex-item h3 {

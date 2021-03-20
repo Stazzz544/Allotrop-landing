@@ -45,6 +45,7 @@
 		}
 
 		&:hover .buttonBG {
+			border-radius: 7px;//safari fix
 			opacity   : 1;
 			transition: opacity ease 0.5s;
 		}

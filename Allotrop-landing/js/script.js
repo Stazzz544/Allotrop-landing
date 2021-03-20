@@ -13860,7 +13860,7 @@ window.addEventListener('DOMContentLoaded', () => {
 new fullpage('#fullpage', {
 	//options here
 	autoScrolling: true,//включает поэкранный скролл
-	anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage','sixthPage'],
+	anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage'],
 	navigation: true,//буллиты навигации справа
 	navigationTooltips: ['Главная', 'О планете', 'Миссия', 'Особенности', 'Галерея', 'Дата релиза'],
 	dragAndMove: true, //разрешает скролл на мобилах пальцем
@@ -13936,23 +13936,23 @@ var $tabs = function (target) {
 $tabs('.tabs');
 
 
- //SECTION, gallery
- var galleryThumbs = new Swiper('.gallery-thumbs', {
+//SECTION, gallery
+var galleryThumbs = new Swiper('.gallery-thumbs', {
 	spaceBetween: 10,
 	slidesPerView: 4,
 	freeMode: true,
 	watchSlidesVisibility: true,
 	watchSlidesProgress: true,
 	breakpoints: {
-			// when window width is >= 320px
+		// when window width is >= 320px
 		374: {
 			slidesPerView: 2,
 			spaceBetween: 20
-			},
+		},
 		720: {
 			slidesPerView: 4,
 			spaceBetween: 20
-			},
+		},
 	}
 });
 var galleryTop = new Swiper('.gallery-top', {
@@ -13965,3 +13965,5 @@ var galleryTop = new Swiper('.gallery-top', {
 		swiper: galleryThumbs
 	}
 });
+
+

@@ -24,8 +24,28 @@ body {
 	padding  : 0 15px
 }
 
+//fix safari
+#fp-nav ul li a{
+	-webkit-transform: translate3d(0,0,0);
+}
+.swiper-button-next{
+	-webkit-transform: translate3d(0,0,0);
+}
+.swiper-button-prev{
+	-webkit-transform: translate3d(0,0,0);
+}
 
-///////////////////////////////
+
+.safari-fix-center{
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+}
+//-webkit-transform: translate3d(0,0,0);
+
+
+
+///////////////////////////////2 section
 
 @media (max-width: 1519px),
 (max-height: 956px) {
@@ -79,9 +99,10 @@ body {
 	}
 
 	.planet__flex-item {
-		width          : 80px;
+		width          : 79px;
 		height         : 80px;
-		background-size: 56px 62px;
+		background-size: 55px 62px;
+
 
 		h3 {
 
