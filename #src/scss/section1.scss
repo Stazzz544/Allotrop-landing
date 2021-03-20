@@ -2,6 +2,10 @@
 
 
 .main-section {
+	overflow: hidden;
+	width: 100vw;
+	// background : url('../img/section-1/bg1.11.jpg') 0 0/cover no-repeat;
+
 	&__content {
 		height         : 100vh;
 		display        : flex;
