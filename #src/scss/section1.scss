@@ -143,14 +143,11 @@
 	}
 }
 
-@media (max-height: 600px) {
-	.content__discription {
-		margin-top: 175px;
-	}
-}
-
 @media (max-height: 600px){
 	.content__buttons {
 		margin-bottom: 30px;
+	}
+	.content__discription {
+		margin-top: 175px;
 	}
 }
