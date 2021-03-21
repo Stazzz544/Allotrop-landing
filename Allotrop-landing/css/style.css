@@ -2760,8 +2760,8 @@ body {
             align-items: center;
   }
 
-  .navigation__link {
-    font-size: 13px;
+  .navigation__flex .navigation__link {
+    font-size: 14px;
   }
 
   .navigation__access {
@@ -2770,6 +2770,10 @@ body {
 
   #fp-nav {
     display: none;
+  }
+
+  .navigation__logo {
+    width: 166px;
   }
 
   .navigation__access:hover,
@@ -2782,6 +2786,9 @@ body {
   .navigation__access:hover,
   .content__button:hover .buttonBG {
     background: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
   }
 
   .webp .buttonBG {
@@ -2872,7 +2879,7 @@ body {
   }
 
   .navigation__flex li {
-    padding: 10px 0;
+    padding: 9% 0;
   }
 
   .navigation__flex_active {
