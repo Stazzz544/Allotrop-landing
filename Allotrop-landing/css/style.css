@@ -2085,9 +2085,14 @@ body {
           justify-content: center;
 }
 
+.gallery__title {
+  margin-top: 3%;
+}
+
 .swiper-params {
-  width: 906px;
+  width: 45%;
   height: 67%;
+  margin: 0 auto;
   padding-bottom: 30px !important;
 }
 
