@@ -1393,6 +1393,17 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+}
+
+.navigation__flex:after {
+  content: "";
+  position: absolute;
+  width: 728px;
+  height: 1px;
+  background: #b4aa78;
+  top: 61px;
+  left: 300px;
 }
 
 .navigation__link {
@@ -1467,7 +1478,6 @@ body {
 
 .main-section {
   overflow: hidden;
-  width: 100vw;
 }
 
 .main-section__content {
@@ -1778,7 +1788,7 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
   align-items: flex-end;
-  height: 73vh;
+  height: 70vh;
 }
 
 .spaceship__place {
@@ -2171,6 +2181,10 @@ body {
           align-items: center;
 }
 
+.footer__logo-and-button {
+  margin-right: 100px;
+}
+
 .footer__logo {
   background: url("../img/section-6/logo_footer_ru.png") 0 0/cover no-repeat;
   height: 336px;
@@ -2370,6 +2384,14 @@ body {
   background-color: black;
 }
 
+header {
+  overflow: hidden;
+}
+
+.main-wrapper {
+  overflow: hidden !important;
+}
+
 .fp-tooltip {
   color: #b4aa78 !important;
   font-family: muller !important;
@@ -2436,6 +2458,16 @@ body {
     line-height: 25px;
     font-weight: 500;
     max-width: 733px;
+  }
+
+  .navigation__flex::after {
+    content: "";
+    position: absolute;
+    width: 429px;
+    height: 1px;
+    background: #b4aa78;
+    top: 56px;
+    left: 239px;
   }
 
   .content__buttons {
@@ -2542,6 +2574,10 @@ body {
     font-size: 14px;
     margin-top: 21px;
     line-height: 19px;
+  }
+
+  .footer__logo-and-button {
+    margin-right: 45px;
   }
 
   .footer__logo {
@@ -2737,17 +2773,13 @@ body {
   }
 }
 
-@media (max-height: 660px), (max-width: 1100px) {
-  .spaceship__discription {
-    font-size: 19px;
-    line-height: 18px;
-    padding-bottom: 30px;
-  }
-}
-
 @media (max-width: 992px) {
   header {
     display: block;
+  }
+
+  .navigation__flex::after {
+    display: none;
   }
 
   .navigation__link_last-points {
@@ -2929,6 +2961,30 @@ body {
     font-size: 16px;
     line-height: 18px;
     padding-bottom: 30px;
+    text-align: justify;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    margin-right: 0px;
+    margin: 0 auto;
+    padding-bottom: 7%;
+    -moz-text-align-last: center;
+         text-align-last: center;
+    padding: 15px;
+    margin-bottom: 5%;
+  }
+
+  .spaceship__place {
+    width: 0px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 0px;
+            flex: 0 0 0;
+  }
+
+  .spaceship__flex {
+    height: 400px;
+    display: block;
+    margin-top: 35%;
   }
 }
 
@@ -2939,6 +2995,10 @@ body {
 
   .planet__icons-flex {
     margin-top: 0;
+  }
+
+  .planet__title {
+    margin-top: 6%;
   }
 }
 
@@ -3044,6 +3104,12 @@ body {
   }
 }
 
+@media (max-width: 675px) {
+  .spaceship__flex {
+    margin-top: 45%;
+  }
+}
+
 @media (max-width: 673px) {
   .swiper-params {
     width: 100%;
@@ -3062,7 +3128,14 @@ body {
   }
 }
 
-@media (max-width: 555px) {
+@media (max-width: 636px) {
+  .footer__button {
+    width: 264px;
+    height: 57px;
+  }
+}
+
+@media (max-width: 550px) {
   .footer__about {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3078,11 +3151,20 @@ body {
   .footer__flex-container {
     padding-right: 0px;
   }
+
+  .footer__logo-and-button {
+    margin: 0;
+  }
 }
 
 @media (max-width: 548px) {
   .planet__flex-column {
     display: none;
+  }
+
+  .planet__discription {
+    padding: 0px;
+    width: 100%;
   }
 
   .planet__icons-flex {
@@ -3147,11 +3229,35 @@ body {
   .content__button:nth-child(2) {
     display: none;
   }
+
+  .content__button:nth-child(1) {
+    margin: 0;
+  }
 }
 
 @media (max-width: 410px) {
   .solution__flex-discription {
     width: 320px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .spaceship__flex {
+    margin-top: 55%;
+  }
+}
+
+@media (max-width: 376px) {
+  .spaceship {
+    height: 100% !important;
+  }
+
+  .spaceship__place {
+    display: none;
+  }
+
+  .spaceship__flex {
+    margin-top: 62%;
   }
 }
 
@@ -3220,6 +3326,7 @@ body {
 
   .content__discription {
     margin-top: 175px;
+    padding: 3px;
   }
 }
 
@@ -3342,6 +3449,12 @@ body {
     font-size: 7px;
     top: 97%;
     left: -125%;
+  }
+}
+
+@media (max-height: 700px) {
+  .spaceship__discription {
+    margin-bottom: 4%;
   }
 }
 

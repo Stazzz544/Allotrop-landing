@@ -19,6 +19,7 @@
 	}
 
 	&__logo-and-button {
+		margin-right: 100px;
 	}
 
 	&__logo {
@@ -198,6 +199,9 @@
 	margin-top: 21px;
 	line-height: 19px;
   }
+  .footer__logo-and-button {
+	margin-right: 45px;
+	}
   .footer__logo {
 		height: 246px;
     width: 274px;
@@ -315,7 +319,15 @@
 	}
 }
 
-@media (max-width: 555px) {
+@media (max-width: 636px) {
+	.footer__button{
+		width: 264px;
+		height: 57px;
+	}
+	
+}
+
+@media (max-width: 550px) {
 	.footer__about{
 		flex-direction: column;
 		height: 75px;
@@ -326,6 +338,10 @@
 	.footer__flex-container{
 		padding-right: 0px;
 	}
+	.footer__logo-and-button {
+		margin: 0;
+	}
+
 }
 
 @media (max-width: 365px) {

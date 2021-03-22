@@ -1,6 +1,17 @@
 body {
 	background-color: black;
 }
+header {
+	overflow: hidden;
+}
+
+// * {
+// 	outline: 1px solid red;
+// }
+
+.main-wrapper{
+	overflow: hidden!important;
+}
 
 @media (max-width: 900px) {
 

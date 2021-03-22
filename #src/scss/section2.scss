@@ -402,11 +402,18 @@
 	.planet__icons-flex{
 		margin-top: 0;
 	}
+	.planet__title{
+		margin-top: 6%;
+	}
 }
 
 @media (max-width: 548px) {
 	.planet__flex-column {
 		display: none;
+	}
+	.planet__discription{
+		padding: 0px;
+		width: 100%;
 	}
 }
 

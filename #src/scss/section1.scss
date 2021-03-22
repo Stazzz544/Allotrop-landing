@@ -3,7 +3,7 @@
 
 .main-section {
 	overflow: hidden;
-	width: 100vw;
+	// width: 100vw;
 	// background : url('../img/section-1/bg1.11.jpg') 0 0/cover no-repeat;
 
 	&__content {
@@ -110,7 +110,10 @@
 @media (max-width:442px) {
 	.content__button:nth-child(2) {
 		display: none;
-  }
+	}
+	.content__button:nth-child(1) {
+		margin: 0;
+}
 }
 
 @media (max-width: 640px) {
@@ -149,5 +152,6 @@
 	}
 	.content__discription {
 		margin-top: 175px;
+		padding: 3px;
 	}
 }
