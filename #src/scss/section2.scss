@@ -18,6 +18,9 @@
 	&__title {
 		font-size: 33px;
 		margin-top: 5%;
+		span{
+			font-size: 39.5px;
+		}
 	}
 
 	&__icons-flex {
@@ -157,7 +160,7 @@
 		}
 
 		h3 {
-			top       : 36%;
+			top       : 31%;
 			left      : 111%;
 			text-align: left;
 		}

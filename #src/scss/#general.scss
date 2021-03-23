@@ -4,6 +4,10 @@ body {
 header {
 	overflow: hidden;
 }
+html, body { 
+	overflow: hidden!important;
+}
+
 
 // * {
 // 	outline: 1px solid red;
@@ -15,9 +19,8 @@ header {
 
 @media (max-width: 900px) {
 
-	//убираем поэкранный скролл и освобождаем блоки
-	.section-bg {
-		// height: 100% !important;
+	html, body { 
+		overflow: visible!important;
 	}
 }
 

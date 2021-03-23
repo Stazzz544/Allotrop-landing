@@ -1,5 +1,7 @@
+@@include('wow.min.js');
 @@include('swiper-bundle.js');
 @@include('fullpage.js');//полноэкранный скролл
+
 
 
 //функция для подключения webp
@@ -55,10 +57,12 @@ new fullpage('#fullpage', {
 	dragAndMove: true, //разрешает скролл на мобилах пальцем
 	responsiveWidth: 900, //убераем прокрутку на определённом типе экрана
 	verticalCentered: false, //Вертикальное центрирование контента в разделах
-	fitToSection: false //нужна ли подстройка разделов под окно просмотра.
+	fitToSection: false, //нужна ли подстройка разделов под окно просмотра.
+	scrollBar:true
 });
 
-
+//WOW.JS activate
+new WOW().init();
 
 //tabs
 var $tabs = function (target) {
