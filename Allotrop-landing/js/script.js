@@ -13874,7 +13874,7 @@ new fullpage('#fullpage', {
 });
 
 //WOW.JS activate
-// new WOW().init();
+new WOW().init();
 
 //tabs
 var $tabs = function (target) {

@@ -1,6 +1,7 @@
 //section footer
 .footer {
 	overflow: hidden;
+	background     : url('../img/section-6/bg/6.jpg') center center /cover no-repeat;
 	&__main-flex{
 		display: flex;
 		flex-direction: column;
@@ -38,17 +39,6 @@
 		width: 238px;
 		height: 62px;
 		margin-top: 18px;
-		&:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 1.5em;
-			height: 100%;
-			background-color: rgba(#fff, 0.6);
-			transform: translateX(-4em) skewX(-45deg);
-			animation: move-light 0.5s infinite;
-		}
 	}
 
 	&__text {
@@ -92,19 +82,6 @@
 		font-size: 20px;
 	}
 }
-// @keyframes move-light {
-// 	90% { transform: none; }
-// 	95% {
-// 		from {
-// 			transform: translateX(-74em) skewX(-45deg);
-// 		 	}
-  
-// 		 to {
-// 			transform: translateX(40em) skewX(-45deg);
-// 	 		}
-//   		}
-// 	}
-//////////footer
 .footer {
 
 	&__footer {
