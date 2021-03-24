@@ -13874,7 +13874,7 @@ new fullpage('#fullpage', {
 });
 
 //WOW.JS activate
-new WOW().init();
+// new WOW().init();
 
 //tabs
 var $tabs = function (target) {
@@ -13958,6 +13958,10 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
 			slidesPerView: 4,
 			spaceBetween: 20
 		},
+		1520: {
+			slidesPerView: 5,
+			spaceBetween: 20
+		},
 	}
 });
 var galleryTop = new Swiper('.gallery-top', {
@@ -13972,3 +13976,28 @@ var galleryTop = new Swiper('.gallery-top', {
 });
 
 
+//language button
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+
+// window.onclick = function(e) {
+// 	if (!e.target.matches('.dropbtn')) {
+// 	  var myDropdown = document.getElementById("myDropdown");
+// 		 if (myDropdown.classList.contains('show')) {
+// 			myDropdown.classList.remove('show');
+// 		 }
+// 	}
+//  }
