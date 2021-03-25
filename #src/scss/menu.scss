@@ -95,20 +95,21 @@
 			position: absolute;
 			z-index: 10;
 			top: 0;
-			left: 54px;
+			left: 120px;
 			width: 1.5em;
 			height: 100%;
 			background-color: rgba(#fff, 0.6);
 			transform: translateX(-4em) skewX(-45deg);
 			animation: slideme 2.5s infinite ease;
-			animation-duration: 10s;
+			animation-duration: 4s;
 			}
 	}
 }
 @-webkit-keyframes slideme{
-	0% { transform: translateX(-4em) skewX(-45deg); }
-	3% { transform: translateX(10em) skewX(-45deg); } 
-	100% { transform: translateX(10em) skewX(-45deg); } 
+	0% { transform: translateX(-40em) skewX(-45deg); }
+	20% { transform: translateX(-40em) skewX(-45deg); }
+	80% { transform: translateX(40em) skewX(-45deg); } 
+	100% { transform: translateX(40em) skewX(-45deg); } 
 }
 //burger media=================================================================
 

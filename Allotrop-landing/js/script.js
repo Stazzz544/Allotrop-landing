@@ -13941,7 +13941,21 @@ var $tabs = function (target) {
 $tabs('.tabs');
 
 
-//SECTION, gallery
+//swipers
+//text-swiper
+var swiper = new Swiper('.swiper-text', {
+	loop: true,
+	freeMode: false,
+	autoplay: {
+		delay: 8000,
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+});
+
+//gallery
 var galleryThumbs = new Swiper('.gallery-thumbs', {
 	spaceBetween: 10,
 	slidesPerView: 4,

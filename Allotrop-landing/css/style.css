@@ -4983,7 +4983,7 @@ body {
   position: absolute;
   z-index: 10;
   top: 0;
-  left: 54px;
+  left: 120px;
   width: 1.5em;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.6);
@@ -4992,24 +4992,29 @@ body {
           transform: translateX(-4em) skewX(-45deg);
   -webkit-animation: slideme 2.5s infinite ease;
           animation: slideme 2.5s infinite ease;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 @-webkit-keyframes slideme {
   0% {
-    -webkit-transform: translateX(-4em) skewX(-45deg);
-            transform: translateX(-4em) skewX(-45deg);
+    -webkit-transform: translateX(-40em) skewX(-45deg);
+            transform: translateX(-40em) skewX(-45deg);
   }
 
-  3% {
-    -webkit-transform: translateX(10em) skewX(-45deg);
-            transform: translateX(10em) skewX(-45deg);
+  20% {
+    -webkit-transform: translateX(-40em) skewX(-45deg);
+            transform: translateX(-40em) skewX(-45deg);
+  }
+
+  80% {
+    -webkit-transform: translateX(40em) skewX(-45deg);
+            transform: translateX(40em) skewX(-45deg);
   }
 
   100% {
-    -webkit-transform: translateX(10em) skewX(-45deg);
-            transform: translateX(10em) skewX(-45deg);
+    -webkit-transform: translateX(40em) skewX(-45deg);
+            transform: translateX(40em) skewX(-45deg);
   }
 }
 
@@ -5099,6 +5104,10 @@ body {
           flex-direction: column;
 }
 
+.planet__container {
+  width: 100%;
+}
+
 .planet__place-holder {
   height: 0px;
 }
@@ -5106,6 +5115,7 @@ body {
 .planet__title {
   font-size: 33px;
   margin-top: 5%;
+  margin-bottom: 30px;
 }
 
 .planet__title span {
@@ -5123,7 +5133,7 @@ body {
   width: 680px;
   height: 500px;
   margin-top: 20px;
-  background: url("../img/section-2/planet.png") 50% 40px/auto 500px no-repeat;
+  background: url("../img/section-2/planet.png") 50% 40px/auto 480px no-repeat;
 }
 
 .planet__flex-culomn-start {
@@ -5195,8 +5205,12 @@ body {
   margin: 0 auto;
   margin-top: 0%;
   padding: 0px 15px;
-  width: 85%;
   font-size: 23px;
+  height: 117px;
+}
+
+.planet__pagination .swiper-pagination-bullet {
+  background-color: orangered;
 }
 
 .planet .item1 {
@@ -5693,7 +5707,6 @@ body {
 
 .footer {
   overflow: hidden;
-  background: url("../img/section-6/bg/6.jpg") center center/cover no-repeat;
 }
 
 .footer__main-flex {
@@ -5738,15 +5751,11 @@ body {
 }
 
 .footer__button {
-  overflow: hidden;
   position: relative;
   margin: 0 auto;
-  width: 204px;
-  height: 55px;
-  margin-top: 10px;
-  width: 238px;
+  margin-top: 5px;
+  width: 216px;
   height: 62px;
-  margin-top: 18px;
 }
 
 .footer__title {
@@ -6109,6 +6118,14 @@ body {
   .content__buttons {
     margin-top: 50px;
   }
+
+  .planet__discription {
+    max-width: 100%;
+  }
+
+  .planet__container {
+    max-width: 763px;
+  }
 }
 
 @media (max-width: 1519px) {
@@ -6148,13 +6165,12 @@ body {
     font-size: 17px;
     line-height: 25px;
     font-weight: 500;
-    max-width: 733px;
-    margin-top: 0%;
-    max-width: 950px;
+    margin-top: 3%;
   }
 
   .planet__title {
-    margin-top: 1%;
+    margin-top: 8%;
+    margin-bottom: 3%;
   }
 
   .item1 {
@@ -6276,6 +6292,12 @@ body {
   }
 }
 
+@media (max-width: 1380px) {
+  .planet__discription {
+    width: auto !important;
+  }
+}
+
 @media (max-width: 1350px) {
   .swiper-params {
     width: 666px;
@@ -6285,6 +6307,12 @@ body {
   .gallery__title {
     font-size: 27px;
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .container-planet {
+    max-width: 100%;
   }
 }
 
@@ -6586,6 +6614,11 @@ body {
     background: url("../img/section-2/planet.png") 50% 20px/auto 400px no-repeat;
   }
 
+  .planet__discription {
+    height: 100%;
+    padding-bottom: 30px;
+  }
+
   .solution {
     height: 100% !important;
   }
@@ -6763,6 +6796,12 @@ body {
   }
 }
 
+@media (max-width: 670px) {
+  .planet__container {
+    max-width: 780px;
+  }
+}
+
 @media (max-width: 662px) {
   .navigation__access:after {
     top: 0;
@@ -6820,6 +6859,7 @@ body {
   .planet__discription {
     padding: 0px;
     width: 100%;
+    padding-bottom: 30px;
   }
 
   .planet__icons-flex {
@@ -7074,15 +7114,9 @@ body {
   }
 }
 
-@media (max-height: 800px) {
-  .planet__place-holder {
-    height: 25px;
-  }
-}
-
 @media (max-height: 776px) {
-  .planet__place-holder {
-    height: 50px;
+  .planet__discription {
+    margin-top: 1%;
   }
 }
 
@@ -7136,6 +7170,15 @@ body {
   .planet__icons-flex {
     background: url("../img/section-2/planet.png") 50% 20px/auto 300px no-repeat;
     max-width: 440px;
+  }
+
+  .planet__title {
+    margin-top: 4%;
+    margin-bottom: 1%;
+  }
+
+  .swiper-text {
+    margin-top: 0;
   }
 }
 
@@ -7238,7 +7281,7 @@ body {
 
 .webp .planet{ background: url(../img/section-2/2.webp) 50% 42px/auto auto no-repeat; }
 
-.webp .planet__icons-flex{ background: url(../img/section-2/planet.webp) 50% 40px/auto 500px no-repeat; }
+.webp .planet__icons-flex{ background: url(../img/section-2/planet.webp) 50% 40px/auto 480px no-repeat; }
 
 .webp .planet .item1{ background-image: url(../img/section-2/icons/1.webp); }
 
@@ -7281,8 +7324,6 @@ body {
 .webp .tabs__link_active{ background: url(../img/section-4/bg/small-active.webp) -17px -7px/110% 120% no-repeat; }
 
 .webp .tab__hexagon{ background: url(../img/section-4/icons/hexagon.webp) 0 0/100% 100%; }
-
-.webp .footer{ background: url(../img/section-6/bg/6.webp) center center/cover no-repeat; }
 
 .webp .footer__logo{ background: url(../img/section-6/logo_footer_ru.webp) 0 0/cover no-repeat; }
 

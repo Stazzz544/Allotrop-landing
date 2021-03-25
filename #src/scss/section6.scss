@@ -1,7 +1,7 @@
 //section footer
 .footer {
 	overflow: hidden;
-	background     : url('../img/section-6/bg/6.jpg') center center /cover no-repeat;
+	// background     : url('../img/section-6/bg/6.jpg') center center /cover no-repeat;
 	&__main-flex{
 		display: flex;
 		flex-direction: column;
@@ -30,15 +30,13 @@
 	} 
 
 	&__button {
-		overflow: hidden;
+		// overflow: hidden;
 		position: relative;
 		margin: 0 auto;
-		width: 204px;
-		height: 55px;
-		margin-top: 10px;
-		width: 238px;
+		margin-top: 5px;
+		width: 216px;
 		height: 62px;
-		margin-top: 18px;
+
 	}
 
 	&__text {
@@ -185,7 +183,7 @@
 		width: 116px;
 	}
 }
-//button
+//language button
 .dropdown {
 	float: left;
 	overflow: hidden;
